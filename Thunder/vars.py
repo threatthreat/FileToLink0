@@ -25,11 +25,11 @@ class Var:
     Configuration variables for the bot.
     """
     # Telegram API credentials
-    API_ID: int = int(os.getenv('API_ID', ''))
-    API_HASH: str = os.getenv('API_HASH', '')
+    API_ID: int = int(os.getenv('API_ID', '16708960'))
+    API_HASH: str = os.getenv('API_HASH', 'dda7630be99593256cb7c520eae0ce6d')
 
     # Bot token
-    BOT_TOKEN: str = os.getenv('BOT_TOKEN', '')
+    BOT_TOKEN: str = os.getenv('BOT_TOKEN', '7769999187:AAElbFEeuIsOIm39vcFZ3oHTRY0KL-kYCwo')
 
     # Bot name
     NAME: str = os.getenv('NAME', 'ThunderF2L')
@@ -41,17 +41,17 @@ class Var:
     WORKERS: int = int(os.getenv('WORKERS', '8'))
 
     # Channel ID where files are stored
-    BIN_CHANNEL: int = int(os.getenv('BIN_CHANNEL', ''))
+    BIN_CHANNEL: int = int(os.getenv('BIN_CHANNEL', '5482962500'))
 
     # Web server configurations
-    PORT: int = int(os.getenv('PORT', '460'))
+    PORT: int = int(os.getenv('PORT', '8080'))
     BIND_ADDRESS: str = os.getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0')
     PING_INTERVAL: int = int(os.getenv('PING_INTERVAL', '1200'))  # 20 minutes
     NO_PORT: bool = str2bool(os.getenv('NO_PORT', 'True'))
 
     # Owner details
-    OWNER_ID: Set[int] = set(int(x) for x in os.getenv('OWNER_ID', '').split() if x.isdigit())
-    OWNER_USERNAME: str = os.getenv('OWNER_USERNAME', '')
+    OWNER_ID: Set[int] = set(int(x) for x in os.getenv('OWNER_ID', '5482962500').split() if x.isdigit())
+    OWNER_USERNAME: str = os.getenv('OWNER_USERNAME', 'Grezy7')
 
     # Application configurations
     APP_NAME: str = os.getenv('APP_NAME', '')
@@ -68,10 +68,10 @@ class Var:
     URL: str = f"https://{FQDN}/" if HAS_SSL else f"http://{FQDN}/"
 
     # Database URL
-    DATABASE_URL: str = os.getenv('DATABASE_URL', '')
+    DATABASE_URL: str = os.getenv('DATABASE_URL', 'mongodb+srv://heisenberg:threat1234@cluster0.wkum1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 
     # Updates channel
-    UPDATES_CHANNEL: Optional[str] = os.getenv('UPDATES_CHANNEL')
+    UPDATES_CHANNEL: Optional[str] = os.getenv('MazzyYT')
 
     # Banned channels
     BANNED_CHANNELS: Set[int] = set(
